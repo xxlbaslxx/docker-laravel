@@ -65,7 +65,18 @@ $ docker compose exec app php artisan storage:link
 $ docker compose exec app chmod -R 777 storage bootstrap/cache
 ```
 
-http://localhost
+http://localhost:8026
+
+### Change port by
+
+1. compose.yml 
+    - target: 8026
+      published: ${WEB_PUBLISHED_PORT:-8026}
+2. ./infra/nginx/default.conf
+    server {
+      listen 8026;
+      listen [::]:8026;
+3. EXPOSE 8026
 
 ## Tips
 
