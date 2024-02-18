@@ -1,7 +1,7 @@
 FROM mysql/mysql-server:8.0
 
 ENV TZ=UTC
-EXPOSE 3037
+EXPOSE 3307
 RUN <<EOF
   mkdir /var/log/mysql
   chown mysql:mysql $_
