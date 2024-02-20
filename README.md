@@ -78,6 +78,11 @@ http://localhost:8026
       listen [::]:8026;
 3. EXPOSE 8026
 
+### pma login
+server: db
+username: phper
+password: secret
+
 ## Tips
 
 - Read this [Taskfile](https://github.com/ucan-lab/docker-laravel/blob/main/Taskfile.yml).
